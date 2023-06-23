@@ -12,6 +12,7 @@ body{
     align-items: center;
     grid-template-rows: 10% 10% 70% 10%;
     grid-template-columns: 1fr;
+    
 }
 
 .menu{
@@ -226,7 +227,13 @@ body{
         width: 20%;
     }
 
+    .social-networks{
+        margin-top: 15px;
+    }
+
     .rights{
         text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }

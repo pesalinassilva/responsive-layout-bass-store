@@ -1,0 +1,231 @@
+body{
+    font-family: "Open Sans";
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "menu"
+    "filter"
+    "products"
+    "social";
+    align-items: center;
+    grid-template-rows: 10% 10% 70% 10%;
+    grid-template-columns: 1fr;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: menu;
+    color: white;
+    height: 100%;
+    background-color: rgb(62, 62, 243);
+}
+
+.name-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1em;
+}
+
+.name-logo p{
+    font-weight: bold;
+}
+
+.bar-menu{
+    margin: 1em;
+}
+
+.list-menu{
+    display: none;
+}
+
+.list-menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.list-menu ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.list-menu li{
+    padding: 8px;
+}
+
+
+.filter{
+    grid-area: filter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(176, 176, 176);
+    margin-bottom: 10px;
+}
+
+.filter p{
+    margin-bottom: 2px;
+    font-weight: 300;
+}
+
+.filter select{
+    width: 70%;
+    height: 2rem;
+}
+
+.products{
+    grid-area: products;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    row-gap: 2em;
+    padding-top: 2em;
+}
+
+.products-scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards{
+    border: solid 1px rgb(184, 184, 184);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px 20px;
+}
+
+.card{
+    flex-grow: 1;
+    background-color: white;
+}
+
+.image img{
+    width: 15rem;
+}
+
+.name h3{
+    margin: 0 ;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.more{
+    width: 30%;
+}
+
+.more button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(52, 87, 183);
+    color: white;
+    width: 100%;
+    height: 2em;
+}
+
+.more button:hover{
+    background-color: rgb(46, 77, 161);
+}
+
+.more button:active{
+    background-color: rgb(95, 117, 180);
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.box{
+    border: solid 1px rgb(203, 195, 195);
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box a{
+    text-decoration: none;
+}
+
+.social{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(62, 62, 243);
+
+}
+
+.social-networks{
+    margin-top: 10px;
+}
+
+.rights p{
+    color: #ffffff;
+    margin: 5px;
+}
+
+@media (min-width: 576px){
+    .grid{
+        grid-template-areas: 
+        "menu filter"
+        "menu products"
+        "social products";
+        /*grid-template-rows: 80% 20%;*/
+        grid-template-columns: 1fr 8fr ;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .bar-menu{
+        display: none;
+    }
+
+    .list-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter select{
+        width: 95%;
+    }
+
+    .products{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .products-scroll{
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        max-height: 38vw;
+    }
+
+    .cards{
+        width: 20%;
+    }
+
+    .rights{
+        text-align: center;
+    }
+}

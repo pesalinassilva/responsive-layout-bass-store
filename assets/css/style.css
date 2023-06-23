@@ -218,6 +218,7 @@ body{
 
     .products-scroll{
         flex-direction: row;
+        justify-content: space-around;
         flex-wrap: wrap;
         overflow-y: auto;
         max-height: 38vw;

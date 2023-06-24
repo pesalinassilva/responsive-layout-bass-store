@@ -12,7 +12,6 @@ body{
     align-items: center;
     grid-template-rows: 10% 10% 70% 10%;
     grid-template-columns: 1fr;
-    
 }
 
 .menu{
@@ -189,8 +188,7 @@ body{
         "menu products"
         "social products";
         /*grid-template-rows: 80% 20%;*/
-        grid-template-columns: 1fr 8fr ;
-        height: 100%;
+        grid-template-columns: 1fr 8fr;
     }
 
     .menu{
@@ -221,7 +219,8 @@ body{
         justify-content: space-around;
         flex-wrap: wrap;
         overflow-y: auto;
-        max-height: 38vw;
+        /*max-height: 38vw;*/
+        height: 100vh;
     }
 
     .cards{

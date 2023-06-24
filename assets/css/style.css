@@ -10,15 +10,15 @@ body{
     "products"
     "social";
     align-items: center;
-    grid-template-rows: 10% 10% 70% 10%;
+    /*grid-template-rows: 10% 10% 70% 10%;*/
     grid-template-columns: 1fr;
 }
 
 .menu{
+    grid-area: menu;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-area: menu;
     color: white;
     height: 100%;
     background-color: rgb(62, 62, 243);
@@ -183,11 +183,11 @@ body{
 
 @media (min-width: 576px){
     .grid{
-        grid-template-areas: 
+        grid-template-areas:
         "menu filter"
         "menu products"
-        "social products";
-        /*grid-template-rows: 80% 20%;*/
+        "social products"; 
+        grid-template-rows: auto;
         grid-template-columns: 1fr 8fr;
     }
 
